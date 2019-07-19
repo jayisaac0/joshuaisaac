@@ -1,0 +1,115 @@
+.widget {
+	select {
+		width: 100%;
+		border: 1px solid #ebebeb;
+		padding: 0.4em 0.8em;
+		outline: none;
+	}
+	ul, ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.widget-title-area {
+		position: relative;
+	}
+	.widget-title {
+		margin-top: 0;
+	}
+	pre {
+		padding: 0.5em
+	}
+	label {
+		margin-bottom: 0;
+	}
+	option {
+		padding: 0.2em 1em;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea {
+		padding: 0.5em 1em;
+		&:focus {
+		 	box-shadow: none !important;
+		}
+	}
+}
+.sidebar-items {
+	background: $white;
+	padding: 45px;
+	@media only screen and (max-width: 992px) {
+		margin-top: 60px;
+	}
+	.widget {
+	    margin-bottom: 60px;
+	}
+	.widget-title {
+		position: relative;
+		margin-top: 0;
+		clear: both;
+		font-weight: 700;
+		margin-bottom: 35px;
+		.text {
+			margin-right: 10px;
+		}
+		.small-border {
+		    width: 7px;
+		    height: 4px;
+		    display: inline-block;
+		    margin: 0 2px;
+		}
+		.large-border {
+		    height: 4px;
+		    display: inline-block;
+		    width: 45px;
+		    margin: 0 2px;
+		}
+	}
+	> .widget:last-of-type {
+		margin-bottom: 0;
+	}
+	&.dark {
+		background: $midnight_express;
+		.widget-title {
+			color: $white;
+		}
+		.widget {
+			color: #e1e1e1;
+		}
+	}
+}
+.widget-title {
+	@media only screen and (max-width: 992px) {
+		margin-bottom: 0 !important;
+	}
+	+ div,
+	+ ul,
+	+ select,
+	+ ol {
+		@media only screen and (max-width: 992px) {
+			margin-top: 30px;
+		}
+	}
+}
+.widget .expand-margin.widget-title {
+	cursor: pointer;
+}
+.widget .expand-margin.widget-title:after {
+    content: "\f067";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50px;
+    line-height: 22px;
+}
+.widget .expand-margin.expand.widget-title:after {
+    content: "\f068";
+}

@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+# Overlay Element
+--------------------------------------------------------------*/
+.hg-background {
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -2;
+}
+.hg-overlay {
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba($black_russian ,0.75);
+		width: 100%;
+		height: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	&.dark {
+		&:before {
+			background-color: rgba($midnight_express ,0.75);
+		}
+	}
+}
+.hg-background-image, 
+.hg-img-into-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.overlay-blue-violet-85 {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba($blue_violet ,0.85);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	> div {
+		position: relative;
+	}
+}
+.overlay-blue-violet-45 {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba($blue_violet ,0.45);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	> div {
+		position: relative;
+	}
+}
+.overlay-bg-snow {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba(#fff ,0.95);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+.overlay-bg-snow-95 {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba(#fff ,0.95);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}

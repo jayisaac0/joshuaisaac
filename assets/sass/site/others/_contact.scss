@@ -1,0 +1,132 @@
+.contact-item {
+	display: flex;
+	align-items: start;
+	margin-bottom: 45px;
+	.icon i {
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-align: center;
+		line-height: 40px;
+		margin-right: 20px;
+		background: $deep_cerise;
+		color: $white;
+	}
+	.info-title {
+		color: $white;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 0.015em;
+	}
+	.info-detail {
+		color: $gainsboro;
+		font-weight: 500;
+	}
+}
+
+.contact-form {
+	&.white-theme {
+		label {
+			color: $white;
+			font-weight: 500;
+			letter-spacing: 0.015em;
+		}
+	}
+	.form-control {
+		border-radius: 0;
+		margin-bottom: 30px;
+		padding: 12px;
+	}
+	.btn-contact {
+		background: $deep_cerise;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.015em;
+		border-radius: 0;
+		padding: 20px 45px;
+		position: relative;
+		.status {
+			bottom: 0;
+			height: 1.375rem;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 1.5rem;
+		}
+
+		span {
+		    transition: .3s ease;
+		}
+
+		.status .spinner {
+		    left: .3125rem;
+		    transition: .3s ease;
+		    top: .1875rem;
+		    position: absolute;
+		    opacity: 0;
+		}
+
+		.status .status-icon {
+		    border-radius: 50%;
+		    left: 0;
+		    opacity: 0;
+		    font-size: .625rem;
+		    padding: .25rem .4375rem;
+		    position: relative;
+		    transition: .3s ease;
+		    z-index: 1;
+		    transform: scale(0);
+		}
+
+		.status .status-icon.valid {
+		    background-color: var(--green);
+		}
+
+		.status .status-icon.invalid {
+		    background-color: var(--red);
+		}
+
+		&.processing span {
+		    opacity: .2;
+		}
+
+		&.processing .spinner {
+		    opacity: 1;
+		}
+
+		&.done .ts-spinner {
+		    opacity: 0;
+		}
+
+		&.done .status-icon {
+		    transform: scale(1);
+		    opacity: 1;
+		}
+	}
+	&.dark-theme {
+		label {
+			color: $white;
+			font-weight: 500;
+			letter-spacing: 0.015em;
+		}
+		.form-control {
+			background: $midnight_express;
+			border-color: #25284a;
+		}
+	}
+}
+  
+.contact-form .input-success, 
+.contact-form .input-error {
+    float: left;
+    width: 100%;
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    display: none;
+}

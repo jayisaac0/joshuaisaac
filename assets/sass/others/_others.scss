@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# Blog Single
+--------------------------------------------------------------*/
+@import "blog_single";
+
+/*--------------------------------------------------------------
+# Pricing Table
+--------------------------------------------------------------*/
+.pricing-box {
+    background: #f8f8ff;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    .priceing-head {
+        border-bottom: 1px solid #ebebeb;
+        padding: 25px;
+        h4 {
+            margin-bottom: 0;
+            font-weight: 600;
+            color: $nero;
+        }
+    }
+    .pricing-body {
+        padding: 0 10% 45px;
+        h2.price {
+            font-size: 48px;
+            color: $matterhorn;
+            font-weight: 600;
+            margin-bottom: 0;
+            padding: 30px 0;
+            line-height: normal;
+            span {
+                font-size: 14px;
+                color: #a8a8a8;
+                font-weight: normal;
+            }
+        }
+        .price-service {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+            li {
+                display: inline-block;
+                font-size: 16px;
+                line-height: 2em;
+                &:after {
+                    content: ",";
+                    margin-right: 3px;
+                }
+            }
+        }
+        .price-order-btn {
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.015em;
+            display: inline-block;
+            border-radius: 30px;
+        }
+    }
+}

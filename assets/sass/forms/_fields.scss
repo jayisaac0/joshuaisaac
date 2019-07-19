@@ -1,0 +1,127 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    &:focus {
+        outline: none;
+    }
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url("../images/angle.png") no-repeat scroll 95% 50%;
+    option[selected] {
+        //color: $white;
+    }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba($black, 0) inset;
+    -webkit-text-fill-color: $color_text_main !important;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba($black, 0) inset;
+    -webkit-text-fill-color: $color_text_main !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    @include prefixed(transition,
+    background-color 5000s ease-in-out 0s);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    vertical-align: baseline;
+    font-size: 100%;
+    @include prefixed(transition,
+    all 0.25s ease);
+}
+
+// Placeholder Color
+::-webkit-input-placeholder {
+    color: $color__meta;
+}
+.widget_newsletter::-webkit-input-placeholder {
+    color: #808080;
+}
+
+:-moz-placeholder {
+    color: $color__meta;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: $color__meta;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $color__meta;
+}
+
+// Form Controls
+.form-controller {
+    font-size: 13px;
+    border: 1px solid $color__border-one;
+    background: $white;
+    width: 100%;
+    padding: 0.5em 1em;
+    outline: none;
+    &:focus {
+        border-color: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+// Post password Form
+.post-password-form {
+    input[type="password"] {
+        font-size: 14px;
+        border: 1px solid #f0f0f0;
+        outline: none;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    input[type="submit"] {
+        padding: 15px 30px;
+        position: relative;
+        top: 0;
+        font-size: 14px;
+    }
+}

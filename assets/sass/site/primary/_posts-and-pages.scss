@@ -1,0 +1,180 @@
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 75px;
+}
+.page-content {
+	margin: 1.4em 0;
+}
+.entry-summary {
+	@extend .page-content;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 2.1em;
+}
+/*--------------------------------------------------------------
+# Page-header
+--------------------------------------------------------------*/
+.page-header {
+    margin: 0;
+    padding: 60px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .section-title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 0;
+        line-height: 1.12em;
+        margin-top: 0;  
+        span {
+            font-family: inherit;
+        }
+        + .page-description {
+            font-weight: 500;
+            letter-spacing: 0.015em;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Page Heading
+--------------------------------------------------------------*/
+.header-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.page-header {
+	margin: 0;
+}
+body.page {
+    .page-links {
+        padding-top: 30px;
+    }
+}
+/*--------------------------------------------------------------
+# Process of work
+--------------------------------------------------------------*/
+.process-item {
+    margin-top: 30px;
+    .process-serial {
+        font-weight: 700;
+        font-size: 60px;
+        margin-bottom: -22px;
+    }
+    .process-box {
+        background: $black_russian;
+        padding: 40px 20px;
+        .process-title {
+            color: $white;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            &:after {
+                content: "";
+                width: 20px;
+                height: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: #3e4757;
+            }
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: rgba(255,255,255,0.45);
+        }
+    }
+}
+
+
+.price-box {
+    background: $black_russian;
+    color: $white;
+    padding: 40px;
+    margin-bottom: 30px;
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+        .title {
+            font-weight: 600;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# No results
+--------------------------------------------------------------*/
+.no-results.not-found {
+    overflow: hidden;
+    background: #ffffff;
+    text-align: center;
+    .page-header {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .page-title {
+        font-family: inherit !important;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 0;
+        position: relative;
+        &:after {
+            content: "";
+            background: #1d1d1f;
+            height: 3px;
+            width: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -25px;
+        }
+    }
+    .page-not-found-icon {
+        margin-top: 5px;
+        i {
+            color: #a94442;
+            font-size: 60px;
+        }
+    }
+    .form-controller {
+        border-top: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: 34px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 4px 0 4px 15px;
+        margin-bottom: 0;
+        @media only screen and (max-width: 540px) {
+            padding: 4px 0 4px 15px;
+        }
+    }
+    .btn-default {
+        border: 1px solid #e1e1e1;
+        @media only screen and (max-width: 540px) {
+            padding: 13px 30px;
+        }
+    }
+    .page-content {
+        @media only screen and (min-width: 992px) {
+            max-width: 540px;
+            margin: auto;
+        }
+    }
+}

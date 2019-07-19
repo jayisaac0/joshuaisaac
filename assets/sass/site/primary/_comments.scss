@@ -1,0 +1,266 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+.comment-content {
+	font-size: 16px;
+	ul, ol {
+		li {
+			margin-top: 10px;
+			line-height: 1.6em;
+		}
+	}
+	> ul,
+	> ol {
+		padding-left: 20px;
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.bypostauthor {
+	display: block;
+}
+
+.cancel-comment-reply-link {
+	bottom: -2px;
+	display: inline-block;
+	left: 0.6em;
+	position: relative;
+}
+.logged-in-as {
+	margin-bottom: 0.7em !important;
+	padding: 0 15px;
+}
+.comments-area {
+	overflow: hidden;
+	margin-top: 45px;
+	padding: 45px;
+	background-color: white;
+	.comment-list, .children {
+		list-style: none;
+		padding: 0;
+	}
+	.comments-title {
+		font-size: 23px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 30px;
+		span {
+			background: $white;
+			z-index: 10;
+	    	position: relative;
+		}
+
+	}
+	.comment-list {
+		margin-bottom: 45px;
+		border-top: none;
+		.comment .comment-respond {
+			margin-bottom: 75px;
+		}
+	}
+	.comment-body {
+		overflow: hidden;
+		margin-bottom: 45px;
+	}
+	.comment-author {
+	    float: left;
+	    margin-right: 15px;
+	    width: 60px;
+	}
+	.date {
+		display: block;
+		font-size: 13px;
+		color: #a0a0a0;
+		margin-top: 0;
+	}
+	.comment-details {
+		position: relative;
+		@include table_display;	
+	}
+	.comment-metadata {
+	    margin-bottom: 0.5em;
+	    color: $color__heading; 
+	    .author {
+	    	font-size: 18px;
+	    }
+	    .says, .comment-edit-link {
+	    	color: #777;
+	    }
+	}
+	.children {
+		margin-left: 108px;
+		@media only screen and (max-width: 1199px) {
+			margin-left: 90px;
+		}		
+		@media only screen and (max-width: 992px) {
+			margin-left: 75px;
+		}		
+		@media only screen and (max-width: 767px) {
+			margin-left: 50px;
+		}		
+		@media only screen and (max-width: 450px) {
+			margin-left: 30px;
+		}		
+		@media only screen and (max-width: 400px) {
+			margin-left: 25px;
+		}
+	}
+	.comment-navigation {
+		 margin-bottom: 3.5em;
+		.nav-links {
+			.nav-previous {
+				float: left;
+			}
+			.nav-next {
+				float: right;
+			}
+			span {
+				font-size: 18px;
+			}
+			a {
+				background-color: #232c3b;
+				color: white;
+				border-radius: 5px;
+			}	
+		}
+	}
+	
+}
+.comment-respond {
+	label {
+		font-weight: 500;
+	}
+	.comment-reply-title {
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-weight: 700;
+	}
+}
+
+.comment-respond {
+	margin-top: 75px;
+	p {
+		margin-bottom: 1em;
+	}
+	.form-control {
+		padding: 15px 15px;
+		margin-bottom: 30px;
+		border-radius: 0;
+		border: 1px solid #e6e6e6;
+	}
+	.form-submit {
+		margin-bottom: 0;
+		padding: 0 15px;
+	}
+	.comment-subscription-form {
+		display: none;
+	}
+	.comment-form-rating {
+		margin-bottom: 1em;
+	}
+	.form-submit {
+		text-align: center;
+		width: 100%;
+	}
+	#submit,
+	.submit {
+		border-color: $deep_cerise;
+		border-radius: 0;
+		background: $deep_cerise;
+		color: $white;
+		padding: 15px 45px;
+    	font-size: 16px;
+    	font-weight: bold;
+    	text-transform: uppercase;
+	}
+}
+#review_form {
+	.form-submit {
+		padding: 0;
+	}
+}
+
+.no-comments {
+	position: relative;
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+
+.comment-reply-link {
+    padding: 8px 22px;
+	font-size: 13px;
+	border: 1px solid $gainsboro;
+    line-height: normal;
+    font-weight: bold;
+    display: inline-block;
+    background-color: transparent;
+	border-radius: 30px;
+	color: $deep_cerise;
+	transition: all 0.35s ease-in-out;
+	&:hover {
+		background: $deep_cerise;
+		color: $white;
+		border-color: $deep_cerise;
+	}
+	@media only screen and (min-width: 600px) {
+		position: absolute;
+		right: 0;
+		top: -50px;
+	}
+}
+
+
+input[type="checkbox"]::-ms-check {
+    color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .comments-area .comment-author  {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.dark {
+	.comments-area {
+		background: $midnight_express;
+		.comment-metadata .author {
+			color: $white;
+		}
+		p {
+			color: #e1e1e1;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			color: $white;
+		}
+		.comment-reply-link {
+			border-color: #25284a;
+		}
+	}
+	.comment-respond {	
+		label {
+			color: $white;
+		}
+		.form-control {
+			background: $midnight_express;
+			border-color: #25284a;
+		}
+	}
+}

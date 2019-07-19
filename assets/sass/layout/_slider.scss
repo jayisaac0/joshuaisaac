@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Banner Block
+--------------------------------------------------------------*/
+.social-item {
+    &.on-banner {
+        li a {
+            border-width: 3px;
+            line-height: 25px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}
+.video-popup-block {
+    .video-popup-btn {
+        > i {
+            position: absolute;
+            color: #fff;
+            width: 75px;
+            height: 75px;
+            border: 2px solid #fff;
+            text-align: center;
+            line-height: 70px;
+            border-radius: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 50%;
+            font-size: 30px;
+            transform: translateY(-50%);
+        }
+        img {
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+}

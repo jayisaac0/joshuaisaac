@@ -1,0 +1,313 @@
+/*--------------------------------------------------------------
+## Service
+--------------------------------------------------------------*/
+.service-card {
+	text-align: center;
+	background: #27282b;
+	position: relative;
+	overflow: hidden;
+	padding: 75px 45px;
+	.service-icon {
+		font-size: 60px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.service-title {
+		color: $white;
+		font-weight: 600;
+		letter-spacing: 0.015em;
+		margin-bottom: 22px;
+	}
+	.service-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: $silver;
+		font-size: 18px;
+		> li {
+			padding-top: 15px;
+		}
+		> li:first-child {
+			padding-top: 0;
+		}
+	}
+	&.dark {
+		background: $lucky_paint;
+	}
+}
+
+.service-carousel {
+	.owl-item.center {
+		.service-card {
+			background: $black_russian;
+			&.dark {
+				background: $lucky_paint;
+			}
+		}
+	}
+	.owl-dots {
+		text-align: center;
+		margin-top: 30px;
+		.owl-dot {
+		  	width: 16px;
+		  	height: 5px;
+		  	display: inline-block;
+			background: $color__widget-text;
+			margin: 0 3px;
+			&.active {
+				width: 30px;
+				background: $deep_cerise;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Company Logo
+--------------------------------------------------------------*/
+.work-for-brand {
+	a {
+		display: block;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.row > .col {
+		@media only screen and (max-width: 767px) {
+			-ms-flex-preferred-size: inherit;
+			flex-basis: inherit;
+			-webkit-box-flex: inherit;
+			-ms-flex-positive: inherit;
+			flex-grow: inherit;
+			max-width: 100%;
+			margin: 30px 0;
+		}
+	}
+}
+/*--------------------------------------------------------------
+## Team
+--------------------------------------------------------------*/
+.team-item {
+	margin-bottom: 5px;
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}	
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+	.team-description {
+		position: relative;
+		padding-left: 75px;
+		margin-left: 35px;
+		@media only screen and (max-width: 992px) {
+			padding-left: 50px;
+			margin-left: 30px;
+		}
+		&:before {
+			content: "";
+			width: 45px;
+			height: 4px;
+			background: $harley_davidson_orange;
+			position: absolute;
+			left: 0;
+			top: 17px;
+		}
+		.team-title {
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+	}
+	.team-thumb {
+		@media only screen and (max-width: 767px) {
+			min-width: 100%;
+			margin-bottom: 30px;
+		}
+		img {
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+	.team-content {
+		color: $gray;
+	}
+}
+
+/*--------------------------------------------------------------
+## Progress Bar
+--------------------------------------------------------------*/
+.skill-bar {
+    margin-bottom: 45px;
+}
+.progress-title-holder {
+    position: relative;
+    font-size: 18px;
+}
+.progress-mark span, 
+.progress-title-holder {
+	color: #121212;
+	font-weight: 700;
+	margin: 0 0 15px;
+	letter-spacing: 0.015em;
+}
+.progress-title {
+    z-index: 100;
+}
+.progress-wrapper {
+    width: 100%;
+    z-index: 10;
+}
+.progress-mark {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    span.percent {
+        color: $soft_black;
+    }
+}
+
+.progress-content {
+    background-color: $deep_cerise;
+    width: 0%;
+}
+.progress-outter {
+    background-color: $snow;
+}
+.progress-content, .progress-outter {
+    height: 6px;
+}
+
+.skill-progress.dark {
+	.progress-mark span, 
+	.progress-title-holder {
+		color: $white;
+	}
+}
+
+.mock-up-block img {
+	display: block;
+	margin: auto;
+}
+
+/*--------------------------------------------------------------
+## Counter Elements
+--------------------------------------------------------------*/
+.hg-promo-numbers {
+	> .row > .col-lg-3 .tg-promo-number {
+		@media only screen and (min-width: 992px) {
+			position: relative;
+		}		
+		@media only screen and (max-width: 991px) {
+			margin-bottom: 60px;
+		}
+		&:after {
+			@media only screen and (min-width: 992px) {
+				content: "";
+				background: rgba($white, 0.15);
+				width: 1px;
+				position: absolute;
+				right: -15px;
+				top: 15%;
+				height: 150px;
+			}
+			@media only screen and (max-width: 991px) {
+				content: "";
+				background: rgba($white, 0.15);
+				height: 1px;
+				position: absolute;
+				bottom: 30px;
+				left: 0;
+				right: 0;
+				width: 150px;
+				margin: auto;
+			}
+		}
+	}
+	> .row > .col-lg-3:last-of-type .tg-promo-number {
+		&:after {
+			@media only screen and (min-width: 992px) {
+				content: "";
+				background: rgba($black, 0);
+				width: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 0;
+			}
+		}
+	}
+}
+.tg-promo-number {
+	.odometer {
+		font-size: ( $heading__one * 3 );
+		color: $white;
+		line-height: 1;
+		font-weight: 600;
+	}
+	.promo-title {
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: 0.015em;
+		font-weight: 600;
+	}
+}
+
+/*--------------------------------------------------------------
+## call To action
+--------------------------------------------------------------*/
+.call-to-action {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	.call-to-title {
+		font-size: ( $heading__one * 1.2 );
+		color: $white;
+		font-weight: 600;
+	}
+	.btn-call-to {
+		background: $deep_cerise;
+		color: $white;
+		border-radius: 0;
+		font-weight: 700;
+		padding: 15px 45px;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 0.015em;
+	}
+}
+
+/*--------------------------------------------------------------
+## Subscriber Block
+--------------------------------------------------------------*/
+.mail-subscribe-block {
+	text-align: center;
+	.form-control {
+		padding: 15px 30px;
+		border-radius: 30px;
+	}
+	.newsletter-btn {
+		padding: 15px 30px;
+		border-radius: 30px;
+		border: 0 none;
+		font-size: 16px;
+		font-weight: 600;
+	}	
+}
+
+/*--------------------------------------------------------------
+## Featured On Block
+--------------------------------------------------------------*/
+.company-content {
+	img {
+		display: block;
+		margin: auto;
+	}
+	a {	
+		@media only screen and (max-width: 992px) {
+		    margin-bottom: 45px;
+		    display: block;
+		}
+	}
+}

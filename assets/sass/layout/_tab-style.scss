@@ -1,0 +1,14 @@
+.tabs-nav-area {
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid $color__widget-text;
+    margin-bottom: 90px;
+    @media only screen and (min-width: 992px) {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.tabs-content.active {
+    display: block !important;
+}

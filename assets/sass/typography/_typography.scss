@@ -1,0 +1,16 @@
+html {
+	font-size: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: $font_body;
+  font-size: $base__font-size;
+  font-weight: normal;
+  line-height: $font__line-height-body;
+  color: $eclipse;
+}
+
+@import "headings";
+
+@import "copy";

@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+.site-footer {
+    .footer-social {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 15px 30px;
+            a {
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 15px;
+                display: block;
+                border-bottom: 1px solid $black_russian;
+                color: $black_russian;
+                &:hover {
+                    color: $deep_cerise;
+                    border-bottom-color: $deep_cerise;
+                }
+            }
+        }
+        &.dark {
+            a {
+                color: $white;
+                border-bottom-color: $white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.copyright-text {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    i {
+        color: red;
+        margin: 0 3px;
+    }
+}
+/*--------------------------------------------------------------
+# Scroll Top
+--------------------------------------------------------------*/
+.back-to-top {
+    border: 2px solid $black_russian;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 135px;
+    margin: auto;
+    > * {
+        display: block;
+    }
+    > .text {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    > i {
+        font-size: 30px;
+    }
+    &.dark {
+        border-color: $white;
+        color: $white;
+        > .text {
+            font-weight: 600;
+        }
+    }
+    &:hover {
+        color: $deep_cerise;
+        border-color: $deep_cerise;
+    }
+}
+
+.footer-bottom-block {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}

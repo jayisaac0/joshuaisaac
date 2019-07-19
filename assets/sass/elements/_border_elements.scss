@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Border element
+--------------------------------------------------------------*/
+.bd-t-soft-nero {
+	border-top: 1px solid $soft_nero;
+}
+.bd-t-white-20 {
+	border-top: 1px solid rgba(255,255,255,0.20);
+}
+
+/*--------------------------------------------------------------
+# Border Extra Elements
+--------------------------------------------------------------*/
+.heading-divider {
+    span {
+        width: 13px;
+        height: 13px;
+        border: 3px solid $harley_davidson_orange;
+        display: inline-block;
+        position: relative;
+        transform: rotate(45deg);
+    }
+}
+
+.title-border {
+    position: relative;
+    text-align: center;
+    .small-border {
+        width: 7px;
+        height: 4px;
+        display: inline-block;
+        margin: 0 2px;
+    }
+    .large-border {
+        height: 4px;
+        display: inline-block;
+        width: 45px;
+        margin: 0 2px;
+    }
+}
+
+.vertical-divider {
+    width: 2px;
+    height: 65px;
+    background: $harley_davidson_orange;
+}
+.horizontal-divider {
+    width: 65px;
+    height: 2px;
+    background: $harley_davidson_orange;
+}

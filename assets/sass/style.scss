@@ -1,0 +1,163 @@
+/*
+Template Name: Intrinsic Personal Portfolio 
+Template URI: https://htmlguru.net/intrinsic/ 
+Author: HTMLguru
+Author URI: http://htmlguru.net
+Description: It is a Multipurpose HTML5 Portfolio Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+    ## typography 
+    ## headings 
+    ## Others Typography
+# Elements
+	## elements
+		## Font Size
+		## Font Weight
+		## Margin Element
+		## Padding Element
+		## Color Element
+		## Background Element 
+		## Extra Background
+		## SVG Fill
+		## Social Element
+		## Overlay Element
+		## Border element
+		## Border Extra Elements
+		## Radius Element
+		## lists
+		## tables
+		## Others Element
+		## Grid Element
+# Forms
+	## buttons
+	## fields
+# Media
+	## Captions
+	## Galleries
+	## media
+# modules 
+	## accessibility
+	## alignments
+	## clearings
+	## infinite-scroll
+# Header Content
+	## Preloader
+	## Header
+# navigation
+	## Links
+	## Menus
+	## Pagination
+	## Navigation responsive
+# layout
+    ## Banner Block
+    ## Hero Block
+    ## Socail Status
+    ## Counter Element
+    ## File featured Element
+    ## Card Element
+    ## Service
+    ## Team
+    ## Progress Bar
+    ## Subscriber Block
+    ## Featured On Block
+    ## Tab Style
+    ## Portfolio
+    ## Portfolio Single
+    ## Testimonial
+    ## Blog
+# others
+	## Blog Single
+	## Pricing Table
+	## Coming Soon
+# site content
+	## About Page
+	## Contact Page
+	## 404 Page
+	## Posts and pages
+	## Page-header
+	## Page Heading
+	## Process of work
+	## No results
+	## Asides
+	## Comments
+	## Widgets
+	## Widgets Content
+# Footer
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Header Content
+--------------------------------------------------------------*/
+@import "header/header";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "others/others";
+
+/*--------------------------------------------------------------
+# Site Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Footer Content
+--------------------------------------------------------------*/
+@import "footer/footer";
