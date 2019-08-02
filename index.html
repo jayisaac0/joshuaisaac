@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -10,13 +9,18 @@
     <!-- Specific Meta
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Personal Portfolio is a modern presentation HTML5 Portfolio HTML Template.">
-    <meta name="keywords" content="HTML5, Template, Design, portfolio, Personal Portfolio, Single portfolio" />
-    <meta name="author" content="HTMLguru">
+    <meta name="description" content="I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of your organization.">
+    <meta name="keywords" content="Software engineer with good backend and front end engineering skills: App development, webapp development, Desktop software development" />
+    <meta name="author" content="Joshua Isaac">
 
+    <meta name="Classification" content="Business">
+    <meta name="author" content="Joshua Isaac, gandertechs@gmail.com">
+    <meta name="designer" content="Joshua Isaac">
+    <meta name="reply-to" content="gandertechs@gmail.com">
+    <meta name="owner" content="Joshua Isaac">
     <!-- Titles
     ================================================== -->
-    <title>Personal Portfolio</title>
+    <title>Software engineer - Joshua Isaac</title>
 
     <!-- Favicons
     ================================================== -->
@@ -41,7 +45,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/modernizr.min.js"></script>
-    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -57,17 +61,23 @@
             </div><!-- /preloader-icon -->
         </div><!-- /preloader-inner -->
     </div><!-- /preloader -->
-
+    <style type="text/css">
+        @media screen and (max-width: 640px) { 
+        #navigation { width: 100% !important;height: 30% !important; }
+        #navigation ul li { text-align: center;  }
+        }
+        @media screen and (min-width: 640px) { .site-header{position: fixed;} }  
+    </style>
     <!-- Header
     ================================================== --> 
-    <header class="site-header sticky-header">
+    <header class="site-header " style="background: #12152c;z-index: 10;width: 100%;">
         <div class="container-fluid pd-0">
             <div class="row no-gutters">
                 <div class="col-lg-7">
                     <div class="header-left-block dark">  
                         <!-- Site Branding -->
                         <div class="site-branding">
-                            <a href="index.html"><img src="assets/images/logo.png" alt="Site Logo" /></a>
+                            <a href="./"><img src="assets/images/logo.png" alt="Site Logo" /></a>
                         </div><!--  /.site-branding -->
                         
                         <!-- Site Navigation -->
@@ -83,7 +93,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <nav class="navigation">
+                            <nav class="navigation" id="navigation">
                                 <div class="overlaybg"></div><!--  /.overlaybg -->
                                 <!-- Main Menu -->
                                 <div class="menu-wrapper">
@@ -98,9 +108,9 @@
                                             <li>
                                                 <a href="#portfolio-block">Works</a>
                                             </li>
-                                            <li>
+                                            <!--<li>
                                                 <a href="#blog-block">Blog</a>
-                                            </li>
+                                            </li>-->
                                             <li>
                                                 <a href="#contact-block">Contact</a>
                                             </li>
@@ -120,13 +130,9 @@
                         <div class="call-block">
                             <a href="tel:+254770396785"><i class="fas fa-phone"></i><span>+254770396785</span></a>
                         </div><!--  /.call-block -->
-                        <div class="social-block">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div><!--  /.social-block -->
+                        <div class="call-block">
+                            <a href="https://api.whatsapp.com/send?phone=254770396785&text=Hello%20Joshua.%20I%20want%20to%20hire%20you%20for%20your%20service"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a>
+                        </div><!--  /.call-block -->
                     </div><!--  /.header-right-block -->
                 </div><!--  /.col-lg-5 -->
             </div><!--  /.row -->
@@ -135,7 +141,7 @@
 
     <!-- Hero Block
     ================================================== -->
-    <section class="hero-block" id="hero-block">
+    <section class="hero-block" id="hero-block" style="margin-top: -4px !important;height: 100vh;">
         <div class="container-xl">
             <div class="row">
                 <div class="col-md-9">
@@ -147,10 +153,11 @@
                         <li>Web Developer</li>
                         <li>App developer</li>
                     </ul><!--  /.hero-designation -->
-                    <a href="https://player.vimeo.com/video/4760972" class="hero-video-btn video-popup">
-                        <i class="fas fa-play"></i>
+                    <a class="hero-video-btn " href="#about-block">
+                        <i class="fas fa-info"></i>
                         <span class="video-title">About Me</span>
                     </a>
+                   
                 </div><!--  /.col-lg-8 -->
             </div><!--  /.row -->
         </div><!--  /.container-fluid -->
@@ -167,7 +174,6 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <div class="section-title dark">
-                        <h2 class="title-counter">01</h2><!--  /.title-counter -->
                         <h2 class="title-main">Services</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
@@ -179,14 +185,14 @@
             </div><!--  /.row -->
             
             <!-- Content Row -->
-            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+            <div class="row" >
                 <div class="col-lg-12">                
                     <div class="service-carousel owl-carousel" data-owl-items="3" data-owl-margin="30" data-owl-dots="1" data-owl-loop="1" data-owl-center="1" data-animate="hg-fadeInUp">
                    
-                        <div class="item">
+                        <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <div class="service-card dark">
                                 <div class="service-icon color-deep-cerise">
-                                    <i class="fas fa-bullseye"></i>
+                                    <i class="fa fa-internet-explorer"></i>
                                 </div><!--  /.service-icon -->
                                 <h2 class="service-title">Web<br /> development</h2><!--  /.service-title -->
                                 <ul class="service-list">
@@ -195,22 +201,22 @@
                             </div><!--  /.service-card -->
                         </div><!--  /.item -->                    
 
-                        <div class="item">
+                        <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <div class="service-card dark">
                                 <div class="service-icon color-deep-cerise">
-                                    <i class="far fa-paper-plane"></i>
+                                    <i class="fas fa-mobile"></i>
                                 </div><!--  /.service-icon -->
                                 <h2 class="service-title">App<br /> development</h2><!--  /.service-title -->
                                 <ul class="service-list">
-                                    <li>Info graphic Design</li>
+                                    <li>IOS / Smartphone</li>
                                 </ul><!--  /.service-list -->
                             </div><!--  /.service-card -->
                         </div><!--  /.item -->
 
-                        <div class="item">
+                        <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <div class="service-card dark">
                                 <div class="service-icon color-deep-cerise">
-                                    <i class="fas fa-marker"></i>
+                                    <i class="fas fa-desktop"></i>
                                 </div><!--  /.service-icon -->
                                 <h2 class="service-title">Software<br /> development</h2><!--  /.service-title -->
                                 <ul class="service-list">
@@ -232,8 +238,7 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <div class="section-title dark">
-                        <h2 class="title-counter">02</h2><!--  /.title-counter -->
-                        <h2 class="title-main">About Me</h2><!-- /.title-main -->
+                        <h2 class="title-main"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">About Me</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
                             <span class="large-border bg-deep-cerise"></span>
@@ -248,15 +253,14 @@
                 <div class="col-lg-10 pd-l-60 pd-r-60">            
                     <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                         <div class="col-lg-12 text-center">
-                            <h2 class="xl-title mrb-30 color-white">About My Business &amp; Skills</h2>
                             <p class="description mrb-75 fts-18 w-500 color-silver">
-                                I am a tech entusiast and like building awesome software. I've built websites, corporate software and management systems and even games! If you are interested, you can view some of my projects in my portfolio down below.
+                                I am a tech entusiast and like building awesome software. I've built websites, corporate software and management systems and even games! If you are interested, you can view some of my projects bellow.
                             </p>
                         </div><!--  /.col-lg-12 -->
                     </div><!--  /.row -->
 
-                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
-                        <div class="col-lg-6">
+                    <div class="row" >
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                             <div class="skill-progress dark">
                                 <div class="skill-bar" data-percentage="94%">
                                     <h4 class="progress-title-holder">
@@ -272,12 +276,12 @@
                                     </div>
                                 </div><!-- /.skill-bar -->
 
-                                <div class="skill-bar" data-percentage="85%">
+                                <div class="skill-bar" data-percentage="70%">
                                     <h4 class="progress-title-holder">
                                         <span class="progress-title">Marketing</span>
                                         <span class="progress-wrapper">
                                             <span class="progress-mark">
-                                                <span class="percent">85%</span>
+                                                <span class="percent">70%</span>
                                             </span>
                                         </span>
                                     </h4>
@@ -287,7 +291,7 @@
                                 </div><!-- /.skill-bar -->
                             </div>
                         </div><!-- /.col-lg-6 -->
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                             <div class="skill-progress dark">
                                 <div class="skill-bar" data-percentage="88%">
                                     <h4 class="progress-title-holder">
@@ -327,10 +331,150 @@
             <div class="row justify-content-md-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-lg-11">
                     <div class="mock-up-block ml-b-135" data-animate="hg-fadeInUp">
-                        <img src="assets/images/author-mockup-dark.png" alt="Author Mock Up" />
+                        <img src="assets/images/author-mockup-dark.png" alt="Author Mock Up" style="height: 50px;" />
                     </div><!--  /.mock-up-block -->
                 </div><!--  /.col-lg-10 -->
             </div><!--  /.row -->
+
+        </div><!--  /.container -->
+    </section><!--  /.about-block -->
+
+        <section class="about-block pd-t-105 bg-black-russian-3" >
+        <div class="container">
+            <!-- Title Row -->
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                <div class="col-12 text-center">
+                    <div class="section-title dark">
+                        <h2 class="title-main"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Technologies</h2><!-- /.title-main -->
+                        <div class="title-border">
+                            <span class="small-border bg-white"></span>
+                            <span class="large-border bg-deep-cerise"></span>
+                            <span class="small-border bg-white"></span>
+                        </div><!--  /.title-border -->
+                    </div><!--  /.section-title -->
+                </div><!--  /.col-12 -->
+            </div><!--  /.row -->
+
+            <!-- Content Row -->
+            <div class="row justify-content-md-center mrb-75">
+                <div class="col-lg-10 pd-l-60 pd-r-60">            
+               
+                    <div class="row" >
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                            <div class="skill-progress dark">
+                                <div class="skill-bar" data-percentage="94%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/PHP.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">php</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">94%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+
+                                <div class="skill-bar" data-percentage="70%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/angular.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Angular</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">70%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+                            </div>
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                            <div class="skill-progress dark">
+                                <div class="skill-bar" data-percentage="88%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/react.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">React js</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">88%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+
+                                <div class="skill-bar" data-percentage="90%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/flask.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Python flask</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">90%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+                            </div>
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                            <div class="skill-progress dark">
+                                <div class="skill-bar" data-percentage="88%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/gcloud.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Cloud computing</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">88%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+
+                                <div class="skill-bar" data-percentage="90%">
+                                    <img style="height:150px;width:150px;border-radius:75px;" src="logos/flutter.png">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Flutter</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent">90%</span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div><!-- /.skill-bar -->
+                            </div>
+                        </div><!-- /.col-lg-6 -->
+                    
+                    </div><!--  /.row -->
+                </div><!--  /.col-lg-10 -->
+            </div><!--  /.row -->
+            
+
+            
+            <!-- Mock Up Content Row -->
+            <div class="row justify-content-md-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                <div class="col-lg-11">
+                    <div class="mock-up-block ml-b-135" data-animate="hg-fadeInUp">
+                        <img src="assets/images/author-mockup-dark.png" alt="Author Mock Up" style="height: 100px;" />
+                    </div><!--  /.mock-up-block -->
+                </div><!--  /.col-lg-10 -->
+            </div><!--  /.row -->
+
         </div><!--  /.container -->
     </section><!--  /.about-block -->
 
@@ -338,14 +482,14 @@
     ================================================== -->
     <section class="fun-facts-block bg-midnight-express pd-t-235 pd-b-120">
         <div class="container hg-promo-numbers">
-            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
-                <div class="col-sm-6 col-lg-4">
+            <div class="row" >
+                <div class="col-sm-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="tg-promo-number text-center">
                         <div class="odometer" data-odometer-final="20">0</div><!--  /.odometer -->
                         <h4 class="promo-title">Happy Client</h4><!--  /.promo-title -->
                     </div><!--  /.tg-promo-number -->
                 </div><!--  /.col-sm-6 -->
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="tg-promo-number text-center">
                         <div class="odometer" data-odometer-final="2">0</div><!--  /.odometer -->
                         <h4 class="promo-title">Years Experience</h4><!--  /.promo-title -->
@@ -357,7 +501,7 @@
                         <h4 class="promo-title">Award Winer</h4> /.promo-title --
                     </div  /.tg-promo-number --
                 </div  /.col-sm-6 -->                
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="tg-promo-number text-center">
                         <div class="odometer" data-odometer-final="30">0</div><!--  /.odometer -->
                         <h4 class="promo-title">Project Complete</h4><!--  /.promo-title -->
@@ -370,9 +514,9 @@
     <!-- Our Work Step
     ================================================== -->
     <section class="call-to-action pd-t-105 pd-b-120">
-        <div class="container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
-            <h2 class="call-to-title">Let's Work On Your Next Projects</h2><!--  /.call-to-title -->
-            <a href="#" class="btn btn-call-to mrt-30">Hire Me Know</a>
+        <div class="container" >
+            <h2 class="call-to-title"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Let's Work On Your Next Projects</h2><!--  /.call-to-title -->
+            <a href="https://api.whatsapp.com/send?phone=254770396785&text=Hello%20Joshua.%20I%20want%20to%20hire%20you%20for%20your%20service" class="btn btn-call-to mrt-30"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000"><i class="fa fa-whatsapp" style="margin-right: 10px;font-size: 20px;"></i> Hire Me Know</a>
         </div><!--  /.container -->
 
         <div class="hg-background hg-overlay dark" data-bg-parallax="scroll" data-bg-parallax-speed="3">
@@ -388,8 +532,7 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <div class="section-title dark">
-                        <h2 class="title-counter">03</h2><!--  /.title-counter -->
-                        <h2 class="title-main">Portfolio ( My projects )</h2><!-- /.title-main -->
+                        <h2 class="title-main">My projects</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
                             <span class="large-border bg-deep-cerise"></span>
@@ -400,8 +543,8 @@
             </div><!--  /.row -->
 
             <!-- Content Row -->
-            <div class="row portfolio-grid" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
-                <div class="col-md-6 col-lg-4 app item">
+            <div class="row portfolio-grid" >
+                <div class="col-md-6 col-lg-4 app item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="portfolio-item" data-animate="hg-fadeInUp">
                         <figure class="portfolio-thumb">
                             <img src="assets/images/portfolio/writemywork.png" alt="Portfolio Item">
@@ -414,9 +557,9 @@
                                 </div><!--  /.popup -->
                             </div><!--  /.overlay-wrapper -->
                         </figure><!-- /.portfolio-thumb -->
-                        <div class="content">
-                            <h3><a href="portfolio-single.html">E-Writting design</a></h3>
-                            <div class="cate"><a href="#">Web development</a></div>
+                        <div class="content"><br />
+                            <h3><a>E-Writting design</a></h3>
+                            <div class="cate"><a>Web development</a></div>
                         </div>                      
                     </div><!--  /.portfolio-item -->
                 </div><!-- /.col-lg-4 -->               
@@ -434,7 +577,6 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <h2 class="title-counter color-dim-gray-im">04</h2><!--  /.title-counter -->
                         <h2 class="title-main color-white-im">Testimonial</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
@@ -479,18 +621,10 @@
         </div><!--  /.hg-background -->
     </section><!--  /.testimonial-block -->
 
-    <!-- Brand Block
-    ================================================== -->
-    <div class="work-for-brand bg-black-russian-3 pd-t-120 pd-b-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <a href="https://writemywork.com/"><img src="assets/images/company/lightlogo.jpg" alt="Company" /></a>
-                </div><!--  /.col -->  
 
-            </div><!--  /.row -->
-        </div><!--  /.container -->
-    </div><!--  /.work-for-brand -->
+
+
+
 
     <!-- Blog Block
     ================================================== -->
@@ -500,8 +634,7 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <div class="section-title dark">
-                        <h2 class="title-counter">05</h2><!--  /.title-counter -->
-                        <h2 class="title-main">News Feed</h2><!-- /.title-main -->
+                        <h2 class="title-main">Current projects</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
                             <span class="large-border bg-deep-cerise"></span>
@@ -514,20 +647,20 @@
             <!-- Content Row -->
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="post-item dark" data-animate="hg-fadeInUp">
                         <article class="post">
                             <figure class="post-thumb">
-                                <div class="entry-date">Dec 25, 2018</div><!--  /.entry-date -->
-                                <a href="blog-single.html">
-                                    <img src="assets/images/blog/blog-post-dark-1.jpg" alt="Post Thumb" />
+                                <div class="entry-date">July, 2019</div><!--  /.entry-date -->
+                                <a>
+                                    <img src="assets/images/company/icon.png" alt="Post Thumb" />
                                 </a>
                             </figure><!--  /.post-thumb -->
                             <div class="post-detail">
-                                <h2 class="entry-title"><a href="blog-single.html">Getting started</a></h2><!--  /.entry-title -->
+                                <h2 class="entry-title"><a>Gander homes</a></h2><!--  /.entry-title -->
                                 <div class="entry-cat">
-                                    <a href="#">Web Developing</a> ,
-                                    <a href="#">Designing</a>
+                                    <a>Web application</a> ,
+                                    <a>Designing</a>
                                 </div><!--  /.entry-cat -->
                             </div><!--  /.post-detail -->
                         </article><!--  /.post -->
@@ -539,6 +672,24 @@
         </div><!--  /.container -->
     </section><!--  /.blog-block -->
 
+
+
+    <!-- Brand Block
+    ================================================== -->
+    <div class="work-for-brand bg-black-russian-3 pd-t-120 pd-b-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"y>
+                    <a href="https://writemywork.com/"><img style="width:150px;height:150px;" src="assets/images/company/lightlogo.jpg" alt="Company" /></a>
+                </div><!--  /.col -->  
+                <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"y>
+                    <a href="javascript::"><img style="width:150px;height:150px;" src="assets/images/company/icon.png" alt="Company" /></a>
+                </div><!--  /.col -->  
+            </div><!--  /.row -->
+        </div><!--  /.container -->
+    </div><!--  /.work-for-brand -->
+
+
     <!-- Contact Block
     ================================================== -->    
     <section class="contact-block pd-t-105 pd-b-120" id="contact-block">
@@ -547,7 +698,6 @@
             <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <div class="section-title">
-                        <h2 class="title-counter color-dim-gray-im">05</h2><!--  /.title-counter -->
                         <h2 class="title-main color-white-im">Get In Touch</h2><!-- /.title-main -->
                         <div class="title-border">
                             <span class="small-border bg-white"></span>
@@ -559,17 +709,17 @@
             </div><!--  /.row -->
 
             <!-- Content Row -->
-            <div class="row justify-content-md-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+            <div class="row justify-content-md-center" >
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-envelope"></i>
                                 </div><!--  /.icon -->
                                 <div class="details">
                                     <h3 class="info-title">Mail</h3><!--  /.info-title -->
-                                    <p class="info-detail">gandertechs@gmail.com</p>
+                                    <p class="info-detail"><a href="mailto:gandertechs@gmail.com">gandertechs@gmail.com</a></p>
                                 </div><!--  /.details -->
                             </div><!--  /.contact-item -->                            
 
@@ -579,7 +729,7 @@
                                 </div><!--  /.icon -->
                                 <div class="details">
                                     <h3 class="info-title">Phone</h3><!--  /.info-title -->
-                                    <p class="info-detail">+254770396785</p>
+                                    <p class="info-detail"><a href="tel:+254770396785">+254770396785</a></p>
                                 </div><!--  /.details -->
                             </div><!--  /.contact-item -->                    
 
@@ -594,8 +744,32 @@
                             </div><!--  /.contact-item -->
                         </div><!--  /.col-md-4 -->
 
-                        <div class="col-md-8">
-                            <form method="post" class="contact-form dark-theme hg-form-email" data-php-path="assets/php/email.php">
+                        <div class="col-md-8" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                            <?php
+                            if (isset($_POST['sendmessage'])) {
+                                $name = $_POST['name'];
+                                $email = $_POST['email'];
+                                $subject = $_POST['subject'];
+                                $body = $_POST['message'];
+
+                                if($name == "") { echo "Error: Provide name"; }
+                                elseif($email == "") { echo "Error: Provide email"; }
+                                elseif($subject == "") { echo "Error: Provide subject"; }
+                                elseif($body == "") { echo "Error: Provide body"; }
+                                else {
+                                    try {
+                                        $to = 'gandertechs@gmail.com';
+                                        $subject = 'Message from my site';
+                                        mb_internal_encoding("UTF-8");
+                                        $headers = 'From: ' .$email . "\r\n";
+                                        send_mail($to, $subject, $body, $headers);
+                                    } catch (Exception $e) {
+                                        //$e->getMessage();
+                                    }
+                                }
+                            }
+                            ?>                          
+                            <form method="post" class="contact-form dark-theme hg-form-email" >
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Name *</label>
@@ -618,7 +792,7 @@
                                     </div><!--  /.col-md-12 -->
 
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-default btn-contact">Send A Message</button>
+                                        <input type="submit" name="sendmessage" class="btn btn-default btn-contact" value="Send A Message" />
                                     </div><!--  /.col-md-12 -->
                                 </div><!--  /.row -->
                             </form><!--  /.contact-form -->
@@ -630,7 +804,6 @@
 
         <!-- Background Block -->
         <div class="hg-background hg-overlay dark" data-bg-parallax="scroll" data-bg-parallax-speed="3">
-            <div class="hg-background-image hg-parallax-element" data-bg-image="assets/images/contact-bg.jpg"></div><!--  /.hg-background-image -->
         </div><!--  /.hg-background -->
     </section><!--  /.contact-block -->
 
@@ -639,7 +812,7 @@
     <footer class="site-footer bg-midnight-express pd-t-75 pd-b-75">
         <div class="container text-center">
             <!-- Scroll Top -->
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12">
                     <a href="#top" class="back-to-top dark">
                         <span class="text">Back <br>To Top</span>
@@ -649,22 +822,20 @@
             </div><!--  /.row -->
 
             <!-- Social Link -->
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12">
                     <ul class="footer-social dark mrt-30 mrb-30">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Pintarest</a></li>
-                        <li><a href="#">Behance</a></li>
-                        <li><a href="#">Dribble</a></li>
+                        <li><a href="https://github.com/jayisaac0"> <i class="fa fa-github" style="margin-right: 10px;"></i> Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/joshua-omwoyo-a66a9296/"> <i class="fa fa-linkedin" style="margin-right: 10px;"></i> Linkedin</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=254770396785&text=Hello%20Joshua.%20I%20want%20to%20hire%20you%20for%20your%20service"> <i class="fa fa-whatsapp" style="margin-right: 10px;"></i> Whatsapp</a></li>
                     </ul><!--  /.footer-social -->
                 </div><!--  /.col-12 -->
             </div><!--  /.row -->
 
             <!-- Copy Right -->
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
                 <div class="col-12">
-                    <p class="copyright-text color-gainsboro">Htmlguru <i class="fas fa-heart"></i> 2018. All rights reserved</p>
+                    <p class="copyright-text color-gainsboro">joshua isaac <i class="fas fa-copyright"></i> <?php echo date('Y'); ?>. All rights reserved</p>
                 </div><!--  /.col-12 -->
             </div><!--  /.row -->
         </div><!--  /.container -->
